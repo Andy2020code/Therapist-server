@@ -69,6 +69,6 @@ if __name__ == '__main__':
     from gunicorn import util
 
     if not util.is_dropprivileges_supported():
-        app.run(host='0.0.0.0', port=8080, threaded=True)
+        app.run(host='0.0.0.0', port=80, threaded=True)
     else:
         print("Please run Gunicorn separately as shown in the instructions.")
