@@ -7,4 +7,4 @@ if __name__ == "__main__":
         # Perform Windows-specific file operations using msvcrt
 
     # Start the Flask app using Gunicorn
-    app.run(host="0.0.0.0", port=80, threaded=True)
+    app.run(host="0.0.0.0", port=8080, threaded=True)
