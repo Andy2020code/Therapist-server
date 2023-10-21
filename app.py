@@ -2,6 +2,8 @@ from flask import Flask, render_template
 import sys
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
+from threading import Thread
+from waitress import serve  # Import Waitress
 
 app = Flask(__name__)
 
@@ -52,7 +54,11 @@ if __name__ == '__main__':
         print("Change detected. Restarting the server.")
         observer.stop()
         observer.join()
-        app.run(host='0.0.0.0', port=8000, threaded=True)
+        serve_thread = Thread(target=serve_app)
+        serve_thread.start()
+
+    def serve_app():
+        serve(app, host='0.0.0.0', port=8080)  # Use Waitress to serve the app
 
     # Create a watchdog event handler
     class FileChangeHandler(FileSystemEventHandler):
@@ -65,10 +71,5 @@ if __name__ == '__main__':
     observer.schedule(event_handler, path='.', recursive=True)
     observer.start()
 
-    # Use Gunicorn to run the Flask app
-    from gunicorn import util
-
-    if not util.is_dropprivileges_supported():
-        app.run(host='0.0.0.0', port=8080, threaded=True)
-    else:
-        print("Please run Gunicorn separately as shown in the instructions.")
+    serve_thread = Thread(target=serve_app)
+    serve_thread.start()
