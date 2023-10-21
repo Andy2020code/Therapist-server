@@ -65,4 +65,10 @@ if __name__ == '__main__':
     observer.schedule(event_handler, path='.', recursive=True)
     observer.start()
 
-    app.run(host='0.0.0.0', port=8080, threaded=True)
+    # Use Gunicorn to run the Flask app
+    from gunicorn import util
+
+    if not util.is_dropprivileges_supported():
+        app.run(host='0.0.0.0', port=8080, threaded=True)
+    else:
+        print("Please run Gunicorn separately as shown in the instructions.")
