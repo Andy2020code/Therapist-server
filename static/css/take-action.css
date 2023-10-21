@@ -115,7 +115,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(IMG/Take-action-img/headee-bg.jpg);
+    background-image: url(/static/IMG/Take-action-img/headee-bg.jpg);
     background-size: 110%;
     background-position: -100px -410px;
     width: 100%;

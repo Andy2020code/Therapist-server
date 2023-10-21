@@ -237,7 +237,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(IMG/therapists/IMG_0181.JPG);
+  background-image: url(/static/IMG/therapists/IMG_0181.JPG);
   background-size: cover;
   background-position: 0px 650px;
   width: 100%;
