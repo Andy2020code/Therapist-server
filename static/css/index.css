@@ -178,8 +178,9 @@ input[type="checkbox"]{
   @media (max-width: 500px){
   
     .index-top-layout{
-      background-size: 300%;
-      background-position: 42% 0%;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url(/static/IMG/Background-01.png);
+      background-size: 320%;
+      background-position: 42% 100%;
       position: relative;
       left: 0px;
       width: 100%;
@@ -231,9 +232,10 @@ input[type="checkbox"]{
     .request-appt-layout{
       width: 50%;
       height: 150px;
-      top: 55px;
+      top: 80px;
       left: 25%;
       flex-direction: column;
+      margin-bottom: 100px;
     }
 
     .request-appt-body{
