@@ -67,4 +67,4 @@ if __name__ == '__main__':
     observer.schedule(event_handler, path='.', recursive=True)
     observer.start()
 
-    run(app, host='0.0.0.0', port=5000)
+    run(app, host='54.160.233.24', port=5000)
