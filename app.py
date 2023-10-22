@@ -10,7 +10,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     # Perform the redirection to your Route 53 domain
-    return redirect("http://arv2.net")
+    return redirect("http://test01.arv2.net")
 
 # Add a route to serve your CSS file
 @app.route('/css/<filename>')
