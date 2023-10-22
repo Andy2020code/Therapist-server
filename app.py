@@ -58,7 +58,7 @@ if __name__ == '__main__':
         serve_thread.start()
 
     def serve_app():
-        serve(app, host='0.0.0.0', port=5000)  # Use Waitress to serve the app
+        serve(app, host='http://arv2.net', port=5000)  # Use Waitress to serve the app
 
     # Create a watchdog event handler
     class FileChangeHandler(FileSystemEventHandler):
