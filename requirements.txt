@@ -1,4 +1,4 @@
-waitress==2.1.2
+linewaitress==2.1.2
 watchdog==3.0.0
 watchfiles==0.20.0
 bottle==0.12.25
