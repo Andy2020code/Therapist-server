@@ -9,8 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    # Perform the redirection to your Route 53 domain
-    return redirect("http://test01.arv2.net")
+    return render_template('index.html')
 
 # Add a route to serve your CSS file
 @app.route('/css/<filename>')
@@ -59,7 +58,7 @@ if __name__ == '__main__':
         serve_thread.start()
 
     def serve_app():
-        serve(app, host='0.0.0.0', port=5000)  # Use Waitress to serve the app
+        serve(app, host='0.0.0.0', port=0)  # Use Waitress to serve the app
 
     # Create a watchdog event handler
     class FileChangeHandler(FileSystemEventHandler):
