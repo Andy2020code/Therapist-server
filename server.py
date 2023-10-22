@@ -1,5 +1,5 @@
 import gunicorn.app.base
-from gunicorn.six import iteritems
+from six import iteritems
 from app import app  # Import your Flask app from app.py
 
 # Define Gunicorn options here
