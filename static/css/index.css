@@ -164,7 +164,6 @@ input[type="checkbox"]{
   @media (max-width: 1200px){
 
     .index-top-layout{
-      background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url(IMG/Background-01.png);
       background-size: 115%;
       background-position: 10% 0%;
     }
@@ -228,6 +227,12 @@ input[type="checkbox"]{
     
   }
 
+  @media (max-width: 1200px){
+    .request-appt-layout{
+      margin-top: 80px;
+    }
+  }
+
   @media (max-width: 500px){
     .request-appt-layout{
       width: 50%;
@@ -253,6 +258,7 @@ input[type="checkbox"]{
       line-height: 22px;
     }
   }
+
 
   .sch-btn{
     background-color: #99AB8B;
@@ -329,13 +335,18 @@ input[type="checkbox"]{
 
   }
 
-  @media (max-width: 1024px){
+  @media (max-width: 1200px){
     .card-row-body{
         border: 1px solid black;
-        background-color: #f5f5f5;
+        background-color: #C8D4BE;
         width: 350px;
         height: 400px;
         margin: 3% 1%;
+    }
+
+    .card-row-body img{
+      position: relative;
+      top: 20px;
     }
 
     .author{
