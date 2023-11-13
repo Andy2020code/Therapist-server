@@ -140,7 +140,7 @@
 
   @media (max-width: 500px){
     .top-bg{
-      background-position: -180px 0px;
+      background-position: -110px -0px;
     }
 
     .top-text-box{
@@ -712,6 +712,7 @@
 
   .depression-therapy-card img{
     width: 300px;
+    height: 200px;
     border-radius: 20px;
   }
 
