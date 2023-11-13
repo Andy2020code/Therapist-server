@@ -167,12 +167,13 @@
 
   @media(max-width: 500px){
     .header-bg{
-      background-position: 550px -0px;
+      background-size: 200%;
+      background-position: -200px -100px;
     }
 
   .outter-div-01{
     position: relative;
-    top: 260px;
+    top: 200px;
     left: 0%;
     background-color: #445233;
     border-radius: 30px;
@@ -192,7 +193,8 @@
     top: 20px;
     line-height: 15px;
 }
-  }
+
+}
 
   .ta-layout{
     display: flex;
