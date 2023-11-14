@@ -239,7 +239,7 @@
   justify-content: space-evenly;
   background-image: url(/static/IMG/therapists/IMG_0181.jpeg);
   background-size: cover;
-  background-position: 0px 0px;
+  background-position: 0px -100px;
   width: 100%;
   height: 70vh;
 }
