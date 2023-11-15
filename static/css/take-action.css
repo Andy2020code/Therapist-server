@@ -168,12 +168,13 @@
   @media(max-width: 500px){
     .header-bg{
       background-size: 200%;
-      background-position: -200px -100px;
+      background-position: -230px -100px;
+      min-height: 50vh;
     }
 
   .outter-div-01{
     position: relative;
-    top: 200px;
+    top: 240px;
     left: 0%;
     background-color: #445233;
     border-radius: 30px;
