@@ -659,7 +659,7 @@
     align-items: center;
 }
 
-.card-16{
+.cards{
     width: 1100px;
     display: flex;
     align-items: center;
@@ -737,6 +737,36 @@
     width: 200px;
     font-size: 20px;
     text-align: center;
+}
+
+@media (max-width: 500px){
+  .specialities-div-body-02{
+      flex-direction: column;
+      max-width: 350px;
+  }
+
+  .cards{
+      max-width: 350px;
+      flex-direction: column;
+  }
+
+  .card-16{
+      width: 350px;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .card-title{
+      font-size: 20px;
+      text-align: center;
+  }
+
+  .card-text{
+      font-size: 15px;
+      text-align: center;
+  }
+
 }
   
 
