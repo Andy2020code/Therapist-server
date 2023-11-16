@@ -642,225 +642,103 @@
     font-style: normal;
   }
 
-  .specialities-info-div-layout{
+
+  .specialities-div-layout-02{
     width: 100%;
-    height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -100px;
-  }
+    margin: 50px 0px;
+}
 
-  .specialities-info-div-body{
+.specialities-div-body-02{
+    max-width: 1920px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .specialities-info-div-layout h1{
-    font-size: 20px;
-    color: #4A5C42;
-    text-align: center;
-  }
+.card-16{
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-  .individual-therapy-card {
-    border-radius: 10px;
-    margin: 20px 10px;
-  }
+.card-16{
+    width: 850px;
+    height: 200px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-  .individual-therapy-img{
+.card-img-01{
     width: 300px;
     height: 200px;
+    border-radius: 20px;
     overflow: hidden;
-    border-radius: 20px;
-  }
+}
 
-  .individual-therapy-img img{
+.card-img-01 img{
     width: 300px;
-    height: 200px;
-    border-radius: 20px;
-  }
+}
 
-  .gs-btn{
-    background-color: #4A5C42;
+.card-text-content{
+    width: 350px;
+}
+
+.card-title{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.card-text{
+    font-size: 15px;
+    text-align: left;
+}
+
+.gs-btn{
     width: 150px;
     height: 40px;
-    border: 2px solid #182B32;
-    border-radius: 10px;
-    position: relative;
-    left: 75px;
-    top: 50px;
+    background-color: #4A5C42;
     color: #fff;
+    border-radius: 10px;
+}
 
-  }
-
-  .gs-btn:hover{
-    background-color: #99AB8B;
+.gs-btn:hover{
+    background-color: #fff;
+    color: #4A5C42;
     border: 2px solid #4A5C42;
-    color: #4A5C42;
-    cursor: pointer;
-    transition: .3s;
-  }
+    transition: .3s all ease-out;
+}
 
-  .kids-therapy-card {
-    border-radius: 10px;
-    margin: 20px 10px;
-  }
-
-  .kids-therapy-card img{
-    width: 300px;
-    border-radius: 20px;
-  }
-
-  .depression-therapy-card {
-    border-radius: 10px;
-    margin: 20px 10px;
-  }
-
-  .depression-therapy-img{
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 20px;
-  }
-  .depression-therapy-img img{
-    border-radius: 20px;
-    overflow: hidden;
-  }
-
-  .depression-therapy-img img{
-    width: 300px;
-    height: 200px;
-    border-radius: 20px;
-  }
-
-  .owros-body{
+.owros-body{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    position: relative;
-    top: 70px;
-    margin: 20px 10px;
+    align-items: center;
+    flex-direction: column;
     width: 300px;
-    height: 400px;
-    border: 5px solid #182B32;
+    height: 500px;
+    border: 3px solid #4A5C42;
     border-radius: 20px;
-  }
+    margin: 0px 50px;
+}
 
-  .owros-body h2{
-    font-family: "nexa-rust-sans-black-shad-2", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    line-height: 35px;
+.owros-body h2{
+    font-size: 30px;
+    width: 200px;
     text-align: center;
-    color: #4A5C42;
-    width: 280px;
-    font-size: 35px;
+}
 
-  }
-
-  .owros-body p{
-    font-family: "courier-std", monospace;
-    font-weight: 700;
-    font-style: normal;
-    color: #4A5C42;
+.owros-body p{
+    width: 200px;
+    font-size: 20px;
     text-align: center;
-    width: 250px;
-    font-size: 22px;
-    margin: 20px 0px 0px 0px;
-  }
-
-  @media(max-width: 1200px){
-    .specialities-info-div-layout h1{
-      font-size: 15px;
-    }
-    
-    .individual-therapy-card img{
-      width: 200px;
-      height: 130px;
-    }
-
-    .kids-therapy-card img{
-      width: 200px;
-      height: auto;
-    }
-
-    .depression-therapy-card img{
-      width: 200px;
-      height: 135px;
-    }
-
-    .owros-body{
-      width: 250px;
-      height: 300px;
-      top: 53px;
-    }
-
-    .owros-body h2{
-      width: 200px;
-      font-size: 25px;
-    }
-
-    .owros-body p{
-      width: 200px;
-      font-size: 15px;
-    }
-
-    .gs-btn{
-      left: 20px;
-    }
-  }
-
-  @media(max-width: 500px){
-    .specialities-info-div-layout{
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 1500px;
-    }
-
-    .specialities-info-div-body{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      top: 50px;
-    }
-    
-    .individual-therapy-card img{
-      width: 300px;
-      height: 200px;
-      border-radius: 20px;
-    }
+}
   
-
-    .kids-therapy-card img{
-      width: 300px;
-      height: 200px;
-      border-radius: 20px;
-    }
-
-    .depression-therapy-card img{
-      width: 300px;
-      height: 200px;
-      border: 20px;
-    }
-
-    .owros-body{
-      top: 0px;
-      width: 300px;
-      height: 400px;
-    }
-
-    .gs-btn{
-      position: relative;
-      left: 70px;
-      top: 10px;
-  
-    }
-  }
 
 /*---foot bar ---*/
 .container_03{
