@@ -698,7 +698,7 @@
 
 .card-text p{
     font-size: 15px;
-    text-align: center;
+    text-align: left;
 }
 
 .gs-btn{
@@ -792,10 +792,15 @@
       text-align: center;
   }
 
-  .card-text{
-      font-size: 15px;
-      text-align: center;
-  }
+  .card-text p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.card-text {
+  font-size: 15px;
+  text-align: center;
+}
 
 }
   
