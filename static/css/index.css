@@ -117,16 +117,14 @@ nav ul li a:hover{
   background-size: 115%;
   background-position: 60% 60%;
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   overflow: hidden;
-  position: relative;
-  top: 80px;
 }
 
 .index-top-text{
   position: relative;
   left: 37%;
-  top: 35%;
+  top: 55%;
   width: 500px;
 }
 
@@ -158,6 +156,7 @@ nav ul li a:hover{
 @media (max-width: 1600px){
   .index-top-text {
     left: 33%;
+
   }
 }
 
@@ -181,9 +180,9 @@ nav ul li a:hover{
     background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url(/static/IMG/background-02.JPG);
     background-size: 320%;
     background-position: 52% 60%;
-    position: relative;
-    left: 0px;
     width: 100%;
+    height: 70vh;
+    overflow: hidden;
   }
 
   .index-top-text{
@@ -195,28 +194,32 @@ nav ul li a:hover{
 }
 
 .request-appt-layout{
-  margin-top: 8.8vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.request-appt-body{
+  width: 50%;
+  height: 120px;
   background-color: #4A5C41;
   border-bottom-left-radius: 70px;
   border-bottom-right-radius: 70px;
-  position: relative;
-  left: 30%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  width: 40%;
-  height: 100px;
+  justify-content: center;
 }
 
 .request-appt-body h1{
   font-family: "chonky-poster", sans-serif;
   font-weight: 400;
-  line-height: 20px;
+  text-align: center;
   font-style: normal;
   color: #fff;
-  position: relative;
-  top: 33%;
-  right: 5%;
+  margin: 10px 0px;
 }
 
 .sch-btn{
@@ -237,9 +240,11 @@ nav ul li a:hover{
 
 @media (max-width: 1600px){
   .request-appt-layout{
-    margin-top: 8.8vh;
-    width: 50%;
-    left: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
 }
@@ -254,35 +259,25 @@ nav ul li a:hover{
 
 @media (max-width: 500px){
   .request-appt-layout{
-    width: 60%;
-    height: 150px;
-    top: -13px;
-    left: 20%;
-    flex-direction: column;
-    margin-bottom: 20px;
+    margin-top: 0vh;
+    width: 100%;
   }
 
   .request-appt-body{
+    width: 80%;
+    height: 150px;
     position: relative;
-    bottom: 7px;
   }
 
   .request-appt-body h1{
     width: 50%;
-    position: relative;
-    left: 25%;
-    top: 0px;
     font-size: 25px;
     text-align: center;
     line-height: 22px;
   }
 }
 
-@media (max-width: 375px){
-  .request-appt-layout{
-    margin-top: 13.8vh;
-  }
-}
+
 
 .card-row-layout{
   display: flex;
