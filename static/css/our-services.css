@@ -27,6 +27,7 @@
   nav .logo{
     color: #4A5C42;
     font-size: 35px;
+    text-align: center;
     font-weight: 600;
   }
   nav ul{
@@ -795,12 +796,12 @@
   .card-text p{
     font-size: 15px;
     text-align: center;
-}
+  }
 
-.card-text {
-  font-size: 15px;
-  text-align: center;
-}
+  .card-text {
+    font-size: 15px;
+    text-align: center;
+  }
 
 }
   
