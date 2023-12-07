@@ -72,7 +72,7 @@ def submit_contact_form():
     return 'OK', 200  # Return a simple response to the client
 
 def send_email(name, email, message):
-    recipient_email = 'andersonromanodasilva2020@gmail.com'  # Replace with the recipient's email address
+    recipient_email = 'zenpractices@gmail.com'  # Replace with the recipient's email address
 
     subject = f"New Contact Form Submission from {name}"
     body = f"Name: {name}\nEmail: {email}\nMessage: {message}"
